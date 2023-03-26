@@ -33,5 +33,18 @@ public class Practice1 {
         System.out.println("Sorry, Our storage is not enough for your order items");
     }
 
+    public static void demo()
+    {
+        System.out.println("asds");
+
+    }
+    public static void demo2()
+    {
+        System.out.println("asds");
+    }
+
+
+
+
 
 }
