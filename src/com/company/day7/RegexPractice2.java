@@ -20,6 +20,8 @@ public class RegexPractice2 {
         if (password.length() >= 15 || password.length() <= 8) {
             System.out.println("your password does length issue");
             return false;
+//
+            //
 
         }
        else if (!password.matches("(.*[A-Z].*)"))
