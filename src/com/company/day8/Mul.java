@@ -19,8 +19,8 @@ public class Mul {
 
         public static int mul(int begin , int end){ // begin =10 end= 15  10+11+12+13+14+15
             int total = 1;
-            for (int i = begin ; begin <=end; begin++){
-                total *=begin;
+            for (int i = begin ; i <=end; i++){
+                total *=i;
 
             }
             return total;

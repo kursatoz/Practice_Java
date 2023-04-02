@@ -18,8 +18,8 @@ public class Loop2 {
 
      public static int sum(int begin , int end){ // begin =10 end= 15  10+11+12+13+14+15
         int total =0;
-        for (begin = 1 ; begin <=end; begin++){
-            total +=begin;
+        for (int i = begin ; i <=end; i++){
+            total +=i;
 
         }
         return total;
