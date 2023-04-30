@@ -28,8 +28,9 @@ public class ArrayListLongestElement {
 
             }
 
+
+
         }
-        System.out.println(longestName + " is the longest name");
 
     }
 
