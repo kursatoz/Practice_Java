@@ -33,12 +33,14 @@ public class Practice1 {
             }
         }
       //  System.out.println(iPhone);
-        System.out.println(averageIphone(iPhone));
+      //  System.out.println(averageIphone(iPhone));
+
+        discountAppleWatch(products);
+        System.out.println(products);
+
 
     }
-
     //-----------------------  average just for iphone price
-
     public static double averageIphone(ArrayList<String> iPhone){
         double averagePrice =0.0;
         double sum = 0.0;
@@ -55,8 +57,24 @@ public class Practice1 {
 
     //------------------- Apple watch has 10% discount
 
+public static void discountAppleWatch(ArrayList<String> list){
+        int indexOfAppleWatch = 0;
+    for (int i = 0; i < list.size(); i++) {
+           if(list.get(i).startsWith("Apple Watch"))
+            indexOfAppleWatch = i;
+    }
+
+     String name = list.get(indexOfAppleWatch).split(",")[0];
+     double price = Double.parseDouble(list.get(indexOfAppleWatch).split(",")[1]);
+     double monthly = Double.parseDouble(list.get(indexOfAppleWatch).split(",")[2]);
+     double newPrice = price - price*0.1;
+     double newMonthly =monthly - monthly*0.1;
+     String appleWatchupdate = name+","+newPrice+","+newMonthly;
+     list.set(indexOfAppleWatch,appleWatchupdate);
 
 
+
+}
 
 
 
