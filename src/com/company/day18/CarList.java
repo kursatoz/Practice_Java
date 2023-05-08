@@ -1,7 +1,13 @@
 package com.company.day18;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class CarList {
-    String[] cars = {
+
+
+
+   static String[] cars = {
             "Acura-NSX",
             "Chevrolet-Corvette",
             "Chevrolet-Cavalier",
@@ -1001,6 +1007,40 @@ public class CarList {
             "Lincoln-Town Car",
             "Chrysler-Town & Country",
             "Chevrolet-Colorado"};
+//ArrayList<String> carList = new ArrayList<String>(Arrays.asList(cars));
+
+    public static void main(String[] args) {
+        carMakeCount(cars,"Mazda");
+    }
+
+
+
+    //------- create a method find a how many repeat car make
+// carMakeCount(Mazda) -> Mazda is 12 times repeated
+public static void carMakeCount( String[] arr, String carName){
+    int count = 0;
+    for (int i = 0; i <arr.length ; i++) {
+        if(arr[i].startsWith(carName))
+            count++;
+    }
+    System.out.println("we have found "+count+" times"+carName +" make");
+
 
 
 }
+
+/**
+ *  create a method which make car repeated more  // TODO
+ *  create a method list of make car's made //TODO
+ *    mazda
+ *          - 323
+ *          - 626
+ *          - M3
+ */
+
+
+
+
+
+}
+
