@@ -3,20 +3,35 @@ package com.company.day22.DogShelter;
 
 import java.util.Scanner;
 
-public class Main { //TODO
+public class Main {
+
+    Scanner scanner = new Scanner(System.in);
     DogShelter shelter = new DogShelter();
 
-Scanner scanner = new Scanner(System.in);
+    public void run(){
+        int userMenuOption;
+        do {
+           userMenuOption =display();
+          displayMenuAction(userMenuOption);
+        }while(userMenuOption != 6);
+
+    }
+
+    public Main(){
+        run();
+    }
+
+
 
     public int display(){
         System.out.println("Please select to number in following options");
+        System.out.println("1.\tAdd_Dog");
+        System.out.println("2.\tView_AllDog");
+        System.out.println("3.\tView_AllAvailableDog");
+        System.out.println("4.\tView_SearchDog");
+        System.out.println("5.\tUpdate_DogHOmeStatus");
+        System.out.println("6.\tExit");
         int displayNumber = scanner.nextInt();
-        System.out.println("1.Add_Dog");
-        System.out.println("2.View_AllDog");
-        System.out.println("3.View_AllAvailableDog");
-        System.out.println("4.View_SearchDog");
-        System.out.println("5.Update_DogHOmeStatus");
-        System.out.println("6.Exit");
         return displayNumber;
     }
 
@@ -24,26 +39,54 @@ Scanner scanner = new Scanner(System.in);
 
         switch (menuOption){
 
-            case 1: shelter.addDog(); //TODO
+            case 1: addDogInfo();
                 break;
             case 2: shelter.viewAllDog();
                 break;
             case 3: shelter.viewAllAvailableDog();
                 break;
-            case 4: shelter.searchDogId();//TODO
-                break;
-            case 5: shelter.updateHomeStatus();
+            case 5: updateDogHomeStatus();
                 break;
             case 6: System.exit(0);
+                break;
+
 
         }
 
 
     }
+    private void updateDogHomeStatus() {
+        System.out.print("Enter dog id: ");
+        shelter.updateHomeStatus(scanner.nextInt());
 
+    }
 
+    private void addDogInfo() {
 
+        Dog dogDetail = new Dog();
+        System.out.println("Enter dog id: ");
+        dogDetail.setDogId(Integer.parseInt(scanner.next()));
 
+        System.out.println("Enter dog name:  ");
+        dogDetail.setDogName(scanner.next());
+
+        System.out.println("Enter dog age: ");
+        dogDetail.setDogAge(Integer.parseInt(scanner.nextLine()));
+
+        System.out.println("Enter dog breed:  ");
+        dogDetail.setDogBreed(scanner.next());
+
+        System.out.println("Enter dog sex:  ");
+        dogDetail.setSex(scanner.nextLine().charAt(0));
+        dogDetail.setDogFoundHome(false);
+
+        shelter.addDog(dogDetail);
+
+    }
+
+    public static void main(String[] args) {
+       new Main();
+    }
 
 
 
