@@ -22,10 +22,10 @@ public class Mapping4 {
             map.put("Grape",2.99);
 
 
-        map.remove("Apple");
-        map.replace("Banana",10.11);
-        map.replace("Tomato",map.get("Tomato")+1);
-        System.out.println(map);
+//        map.remove("Apple");
+//        map.replace("Banana",10.11);
+//        map.replace("Tomato",map.get("Tomato")+1);
+//        System.out.println(map);
 
     }
 
