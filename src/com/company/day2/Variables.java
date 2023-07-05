@@ -20,7 +20,7 @@ public class Variables {
 
 
         //char - string - boolean
-        System.out.println(  ""   );
+        System.out.println();
 
 
 

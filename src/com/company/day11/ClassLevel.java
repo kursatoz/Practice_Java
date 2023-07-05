@@ -16,7 +16,7 @@ public class ClassLevel {
 
         int num = 10;
         String str1 = "Alex";
-        String str = new String("Alex");
+        String str = "Alex";
         Scanner scanner = new Scanner(System.in);
     }
     public static void method1() {
