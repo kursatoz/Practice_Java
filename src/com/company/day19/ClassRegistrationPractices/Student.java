@@ -2,10 +2,10 @@ package com.company.day19.ClassRegistrationPractices;
 
 public class Student {
 
-  private int studentId;
-  private String firstName;
-  private String lastName;
-  private int year;
+  private final int studentId;
+  private final String firstName;
+  private final String lastName;
+  private final int year;
 
 
     public Student(int studentId, String firstName, String lastName, int year) {

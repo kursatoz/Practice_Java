@@ -2,9 +2,9 @@ package com.company.day19.ClassRegistrationPractices;
 
 public class ClassRegistration {
     private  Student[] registeredStudent;
-    private String className;
+    private final String className;
     private int numStudents; //15
-    private int maxStudents;  //15
+    private final int maxStudents;  //15
 
     public ClassRegistration(String className, int maxStudents) {
         this.className = className;

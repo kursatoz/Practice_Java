@@ -30,10 +30,8 @@ public class InterviewQuestion2 {
     }
 
     public static boolean isADigit(String character){
-        boolean result = false;
-            if (Character.isDigit(character.charAt(0)))
+        boolean result = Character.isDigit(character.charAt(0));
         // if ( character.charAt(0)>=48 && character.charAt(0)<= 57 )
-            result = true;
 
         return result;
     }

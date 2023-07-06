@@ -20,11 +20,7 @@ public class Practice1 {
     }
 
     public static boolean isOrderAvailable(int orderQty, int storageQty) { //5 , 10
-        if (storageQty >= orderQty)
-            return true;
-        else {
-            return false;
-        }
+        return storageQty >= orderQty;
     }
     public static String checkOutPassed() {
        return "Your order is processing  \n your order has been shipped\n Thank your for shopping";

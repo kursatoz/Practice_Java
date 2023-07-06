@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DogShelter {
 
-    private List<Dog> dogList = new ArrayList();
+    private final List<Dog> dogList = new ArrayList();
 
 
     public void addDog(Dog dogInfo) {
@@ -26,14 +26,14 @@ public class DogShelter {
     public void viewAllAvailableDog() {
         for (Dog each : dogList) {
             if (!each.isDogFoundHome())
-                System.out.println(each.toString());
+                System.out.println(each);
         }
     }
 
     public void searchDogId(int id) {
         for (Dog each : dogList) {
             if (each.getDogId() == id)
-                System.out.println(each.toString());
+                System.out.println(each);
         }
 
     }

@@ -44,7 +44,6 @@ public class Practice1 {
              System.out.println("!!!!!You got 10k USD, You won!!!!!");
 
          } else if (guess1 == random1 || guess2 == random2) { // r; 76 g; 74 || r; 86 g; 36
-             ;
              System.out.println("----You got 7k USD, good guess----");
          } else if (guess1 == random1 || guess1 == random2 || guess2 == random1 || guess2 == random2) {
              System.out.println("+++++You hit just one digit , and you won 3k USD ++++++ ");

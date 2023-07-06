@@ -25,7 +25,7 @@ public class ReverseWord {
             right--;
 
         }
-        return  new String(str);
+        return str;
     }
 
 }
